@@ -147,15 +147,6 @@ export const query = graphql`
         node {
           article {
             raw
-            references {
-              ... on ContentfulAsset {
-                contentful_id
-                __typename
-                file {
-                  url
-                }
-              }
-            }
           }
           image {
             file {

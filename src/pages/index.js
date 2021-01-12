@@ -39,7 +39,7 @@ const IndexPage = (props) => {
                           <div>
                             <p>{edge.node.title}</p>
                             <p>{renderRichText(edge.node.article, {})}</p>
-                            <div><img src={edge.node.image.file.url} /></div>
+                            {edge.node.image ? <div><img src={edge.node.image.file.url} /></div> : ''}
                           </div>
                         )}
                         <p class="txt-lead-case"><strong>既存のHULFTシステムで、クラウド上にデータ活用基盤を素早く簡単に構築～HULFTクラウドストレージオプションによるオンプレとクラウドの連携～</strong></p>
